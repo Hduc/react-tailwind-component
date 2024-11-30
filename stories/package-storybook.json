@@ -1,0 +1,15 @@
+{
+    "name": "react-tailwind-component-storybook",
+    "version": "1.0.0",
+    "scripts": {
+      "storybook": "start-storybook -p 6006",
+      "build-storybook": "build-storybook"
+    },
+    "devDependencies": {
+      "@storybook/react": "^6.5.0",
+      "@storybook/addon-docs": "^6.5.0",
+      "@storybook/addon-controls": "^6.5.0",
+      "@storybook/addon-actions": "^6.5.0"
+    }
+  }
+  
