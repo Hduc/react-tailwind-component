@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "jsx": "react",
-    "declaration": true,
-    "declarationDir": "./dist",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
+    "target": "ESNext",                   // Hỗ trợ ESNext
+    "module": "ESNext",                   // Sử dụng module ESNext
+    "jsx": "react-jsx",                   // JSX Transform (React 17+)
+    "strict": true,                       // Chế độ strict của TypeScript
+    "esModuleInterop": true,              // Hỗ trợ ESM interop
+    "skipLibCheck": true,                 // Bỏ qua kiểm tra thư viện
+    "moduleResolution": "node",           // Giải quyết module theo Node.js
+    "declaration": true,                  // Tạo file .d.ts
+    "declarationDir": "./dist",           // Thư mục file .d.ts
+    "outDir": "./dist",                   // Thư mục đầu ra
+    "lib": ["DOM", "ESNext"],             // Hỗ trợ API DOM và ESNext
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "**/*.stories.ts", "**/*.stories.tsx"]
+  "include": ["src/**/*"],                // Bao gồm tất cả file trong `src`
+  "exclude": ["node_modules", "dist"]     // Loại trừ các thư mục không cần thiết
 }

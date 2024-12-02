@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "target": "es6",
-    "module": "esnext",
-    "jsx": "react",
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
     "declaration": true,
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
   },
   "include": [
     "packages/react-tailwind-component/src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
